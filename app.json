@@ -1,0 +1,45 @@
+{
+    "name": "Glipbot for GetSatisfaction",
+    "description": "A Glipbot to query Get Satisfaction",
+    "repository": "https://github.com/grokify/glip-hubot-getsatisfaction",
+    "logo": "https://raw.githubusercontent.com/grokify/hubot-getsatisfaction/master/docs/images/hubot_getsatisfaction.png",
+    "keywords": ["Glip","Glipbot","Hubot","Get Satisfaction"],
+    "website": "https://github.com/grokify",
+    "addons": [
+        "redistogo:nano",
+        "papertrail:choklad"
+    ],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "Free"
+        }
+    },
+    "env": {
+        "HUBOT_GLIP_EMAIL": {
+            "description": "Glipbot user email",
+            "value": "",
+            "required": true
+        },
+        "HUBOT_GLIP_PASSWORD": {
+            "description": "Glipbot user password",
+            "value": "",
+            "required": true
+        },
+        "HUBOT_GLIP_HOST": {
+            "description": "Glip host",
+            "value": "glip.com",
+            "required": false
+        },
+        "HUBOT_GETSATISFACTION_COMPANY": {
+            "description": "Get Satisfaction Company Name",
+            "value": "ringcentral",
+            "required": false
+        },
+        "HUBOT_ROBOT_NAME": {
+            "description": "Bot name - used for commands",
+            "value": "gsbot",
+            "required": false
+        }
+    }
+}
