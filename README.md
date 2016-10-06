@@ -6,8 +6,8 @@ deployed on [Heroku][heroku] to get you up and running as quick as possible.
 
 It uses the following:
 
-* [hubot-glip adapter](https://www.npmjs.com/package/hubot-glip)
-* [hubot-getsatisfaction handler](https://www.npmjs.com/package/hubot-getsatisfaction)
+* [hubot-glip adapter](https://github.com/tylerlong/hubot-glip) - [hubot-glip adapter](https://www.npmjs.com/package/hubot-glip)
+* [hubot-getsatisfaction handler](https://github.com/grokify/hubot-getsatisfaction) - [NPM](https://www.npmjs.com/package/hubot-getsatisfaction)
 
 This README is intended to help get you started. Definitely update and improve
 to talk about your own instance, how to use and deploy, what functionality is
@@ -16,8 +16,6 @@ available, etc!
 [heroku]: http://www.heroku.com
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
-
-
 
 ### Running GetSat Glipbot on Heroku
 
