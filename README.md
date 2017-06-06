@@ -84,8 +84,6 @@ from `external-scripts.json` and you don't need to worry about redis at all.
 
 [redistogo]: https://redistogo.com/
 
-## Adapters
-
 ## Deployment
 
     % heroku create --stack cedar
