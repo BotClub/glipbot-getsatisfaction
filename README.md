@@ -6,16 +6,8 @@ deployed on [Heroku][heroku] to get you up and running as quick as possible.
 
 It uses the following:
 
-* [hubot-glip adapter](https://github.com/tylerlong/hubot-glip) - [hubot-glip adapter](https://www.npmjs.com/package/hubot-glip)
-* [hubot-getsatisfaction handler](https://github.com/grokify/hubot-getsatisfaction) - [NPM](https://www.npmjs.com/package/hubot-getsatisfaction)
-
-This README is intended to help get you started. Definitely update and improve
-to talk about your own instance, how to use and deploy, what functionality is
-available, etc!
-
-[heroku]: http://www.heroku.com
-[hubot]: http://hubot.github.com
-[generator-hubot]: https://github.com/github/generator-hubot
+* [hubot-glip](https://github.com/tylerlong/hubot-glip) adatper - [NPM](https://www.npmjs.com/package/hubot-glip)
+* [hubot-getsatisfaction](https://github.com/grokify/hubot-getsatisfaction) handler - [NPM](https://www.npmjs.com/package/hubot-getsatisfaction)
 
 ### Running GetSat Glipbot on Heroku
 
@@ -29,20 +21,20 @@ You can test your hubot by running the following, however some plugins will not
 behave as expected unless the [environment variables](#configuration) they rely
 upon have been set.
 
-You can start GetSat Glipbot locally by running:
+You can start GetSat Glipbot locally by running `bin/hubot` with the `--name` parameter.
 
-    % bin/hubot
+    % bin/hubot --name gsbot
 
 You'll see some start up output and a prompt:
 
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
-    GetSatGlipbot>
+    gsbot>
 
 Then you can interact with GetSatGlipbot by typing `GetSatGlipbot help`.
 
-    GetSatGlipbot> GetSatGlipbot help
-    GetSatGlipbot animate me <query> - The same thing as `image me`, except adds [snip]
-    GetSatGlipbot help - Displays all of the help commands that GetSatGlipbot knows about.
+    gsbot gsbot help
+    gsbot animate me <query> - The same thing as `image me`, except adds [snip]
+    gsbot help - Displays all of the help commands that GetSatGlipbot knows about.
     ...
 
 ### Configuration
@@ -147,24 +139,6 @@ from `external-scripts.json` and you don't need to worry about redis at all.
 [redistogo]: https://redistogo.com/
 
 ## Adapters
-
-Adapters are the interface to the service you want your hubot to run on, such
-as Campfire or IRC. There are a number of third party adapters that the
-community have contributed. Check [Hubot Adapters][hubot-adapters] for the
-available ones.
-
-If you would like to run a non-Glip or shell adapter you will need to add
-the adapter package as a dependency to the `package.json` file in the
-`dependencies` section.
-
-Once you've added the dependency with `npm install --save` to install it you
-can then run hubot with the adapter.
-
-    % bin/hubot -a <adapter>
-
-Where `<adapter>` is the name of your adapter without the `hubot-` prefix.
-
-[hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
 ## Deployment
 
