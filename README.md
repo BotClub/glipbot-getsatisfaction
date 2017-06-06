@@ -21,9 +21,18 @@ You can test your hubot by running the following, however some plugins will not
 behave as expected unless the [environment variables](#configuration) they rely
 upon have been set.
 
-You can start GetSat Glipbot locally by running `bin/hubot` with the `--name` parameter.
+You can start GetSat Glipbot locally by running `bin/hubot` with the `--name` parameter. The Glip and GetSat environment variables should be set.
 
-    % bin/hubot --name gsbot
+    $ HUBOT_GLIP_SERVER=https://platform.ringcentral.com \
+      HUBOT_GLIP_APP_KEY=MyGlipAppKey \
+      HUBOT_GLIP_APP_SECRET=MyGlipAppSecret \
+      HUBOT_GLIP_USERNAME=16505550123
+      HUBOT_GLIP_EXTENSION=102
+      HUBOT_GLIP_PASSWORD=MyUserPassword
+      HUBOT_GETSATISFACTION_COMPANY=ringcentral \
+      HUBOT_GETSATISFACTION_VIEW=markdown \
+      ./bin/hubot -n hubot -a glip
+```
 
 You'll see some start up output and a prompt:
 
@@ -32,9 +41,8 @@ You'll see some start up output and a prompt:
 
 Then you can interact with GetSatGlipbot by typing `GetSatGlipbot help`.
 
-    gsbot gsbot help
-    gsbot animate me <query> - The same thing as `image me`, except adds [snip]
-    gsbot help - Displays all of the help commands that GetSatGlipbot knows about.
+    gsbot gs help
+    gsbot gs search topics sort:votes glip
     ...
 
 ### Configuration
