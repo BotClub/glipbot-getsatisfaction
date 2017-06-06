@@ -16,24 +16,44 @@
         }
     },
     "env": {
-        "HUBOT_GLIP_EMAIL": {
+        "HUBOT_GLIP_SERVER": {
             "description": "Glipbot user email",
             "value": "",
             "required": true
         },
-        "HUBOT_GLIP_PASSWORD": {
+        "HUBOT_GLIP_APP_KEY": {
             "description": "Glipbot user password",
             "value": "",
             "required": true
         },
-        "HUBOT_GLIP_HOST": {
+        "HUBOT_GLIP_APP_SECRET": {
             "description": "Glip host",
             "value": "glip.com",
+            "required": true
+        },
+        "HUBOT_GLIP_USERNAME": {
+            "description": "Glipbot user email",
+            "value": "",
+            "required": true
+        },
+        "HUBOT_GLIP_EXTENSION": {
+            "description": "Glipbot user password",
+            "value": "",
             "required": false
+        },
+        "HUBOT_GLIP_PASSWORD": {
+            "description": "Glip host",
+            "value": "glip.com",
+            "required": true
         },
         "HUBOT_GETSATISFACTION_COMPANY": {
             "description": "Get Satisfaction Company Name",
-            "value": "ringcentral",
+            "value": "ringcentraldev",
+            "required": false
+        },
+        "HUBOT_GETSATISFACTION_VIEW": {
+            "description": "Get Satisfaction view style",
+            "value": "markdown",
             "required": false
         },
         "HUBOT_ROBOT_NAME": {
