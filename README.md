@@ -37,10 +37,9 @@ You can start GetSat Glipbot locally by running `bin/hubot` with the `--name` pa
       HUBOT_GETSATISFACTION_VIEW=markdown \
       ./bin/hubot -n hubot -a glip
 
-You'll see some start up output and a prompt:
+You'll see some start up output such as:
 
     [Sat Feb 28 2015 12:38:27 GMT+0000 (GMT)] INFO Using default redis on localhost:6379
-    gsbot>
 
 Then you can interact with GetSatGlipbot by typing `GetSatGlipbot help`.
 
