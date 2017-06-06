@@ -47,29 +47,6 @@ Then you can interact with GetSatGlipbot by typing `GetSatGlipbot help`.
     gsbot gs search topics sort:votes glip
     ...
 
-### Configuration
-
-### external-scripts
-
-There will inevitably be functionality that everyone will want. Instead of
-writing it yourself, you can use existing plugins.
-
-Hubot is able to load plugins from third-party `npm` packages. This is the
-recommended way to add functionality to your hubot. You can get a list of
-available hubot plugins on [npmjs.com][npmjs] or by using `npm search`:
-
-    % npm search hubot-scripts panda
-    NAME             DESCRIPTION                        AUTHOR DATE       VERSION KEYWORDS
-    hubot-pandapanda a hubot script for panda responses =missu 2014-11-30 0.9.2   hubot hubot-scripts panda
-    ...
-
-To use a package, check the package's documentation, but in general it is:
-
-1. Use `npm install --save` to add the package to `package.json` and install it
-2. Add the package name to `external-scripts.json` as a double quoted string
-
-You can review `external-scripts.json` to see what is included by default.
-
 ##  Persistence
 
 If you are going to use the `hubot-redis-brain` package (strongly suggested),
