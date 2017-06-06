@@ -1,10 +1,10 @@
 {
     "name": "Glipbot for GetSatisfaction",
     "description": "A Glipbot to query Get Satisfaction",
-    "repository": "https://github.com/grokify/glip-hubot-getsatisfaction",
+    "repository": "https://github.com/grokify/glipbot-getsatisfaction",
     "logo": "https://raw.githubusercontent.com/grokify/hubot-getsatisfaction/master/docs/images/hubot_getsatisfaction.png",
     "keywords": ["Glip","Glipbot","Hubot","Get Satisfaction"],
-    "website": "https://github.com/grokify",
+    "website": "https://github.com/grokify/glipbot-getsatisfaction",
     "addons": [
         "redistogo:nano",
         "papertrail:choklad"
