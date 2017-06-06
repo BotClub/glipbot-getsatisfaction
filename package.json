@@ -1,8 +1,8 @@
 {
-  "name": "GetSatGlipbot",
+  "name": "gsbot",
   "version": "0.0.0",
   "private": true,
-  "author": "hubot@example.com",
+  "author": "johncwang@gmail.com",
   "description": "A helpful Glipbot to search Get Satisfaction.",
   "dependencies": {
     "hubot": "^2.19.0",
@@ -21,6 +21,6 @@
     "hubot-shipit": "^0.2.0"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">=0.10.x"
   }
 }
