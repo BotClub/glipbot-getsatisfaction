@@ -17,33 +17,33 @@
     },
     "env": {
         "HUBOT_GLIP_SERVER": {
-            "description": "Glipbot user email",
-            "value": "",
+            "description": "Glip API server URL",
+            "value": "https://platform.ringcentral.com",
             "required": true
         },
         "HUBOT_GLIP_APP_KEY": {
-            "description": "Glipbot user password",
+            "description": "Glip app key",
             "value": "",
             "required": true
         },
         "HUBOT_GLIP_APP_SECRET": {
-            "description": "Glip host",
-            "value": "glip.com",
+            "description": "Glip app secret",
+            "value": "",
             "required": true
         },
         "HUBOT_GLIP_USERNAME": {
-            "description": "Glipbot user email",
+            "description": "Glipbot username",
             "value": "",
             "required": true
         },
         "HUBOT_GLIP_EXTENSION": {
-            "description": "Glipbot user password",
+            "description": "Glipbot extension",
             "value": "",
             "required": false
         },
         "HUBOT_GLIP_PASSWORD": {
-            "description": "Glip host",
-            "value": "glip.com",
+            "description": "Glipbot password",
+            "value": "",
             "required": true
         },
         "HUBOT_GETSATISFACTION_COMPANY": {
